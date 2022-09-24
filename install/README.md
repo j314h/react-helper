@@ -98,14 +98,15 @@ module.exports = {
 {
   "space": 2,
   "rules": {
-    "unicorn/filename-case": "off",
-    "@typescript-eslint/no-floating-promises": "off",
+    "capitalized-comments": "off",
     "import/extensions": "off",
-    "n/file-extension-in-import": "off",
-    "@typescript-eslint/object-curly-spacing": "off",
-    "@typescript-eslint/triple-slash-reference": "off",
     "import/no-unassigned-import": "off",
-    "capitalized-comments": "off"
+    "n/file-extension-in-import": "off",
+    "unicorn/filename-case": "off",
+    "unicorn/prefer-module": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/object-curly-spacing": "off",
+    "@typescript-eslint/triple-slash-reference": "off"
   }
 }
 ```
@@ -114,7 +115,7 @@ module.exports = {
 > so create in one and copy paste my code.  
 > I removed some rules that break problem with some react file
 
-4. my setting of vscode
+5. my setting of vscode
 
 > configuring eslint for the project and done.  
 > now here is the off topic part about my vscode config  
@@ -177,7 +178,16 @@ module.exports = {
 }
 ```
 
-3. instead of the scripts of your package.json`
+3. add this to the beginning of the file `tsconfig.json`
+
+```json
+{
+  "extends": "./tsconfig.paths.json"
+  // .....
+}
+```
+
+4. instead of the scripts of your package.json`
 
 ```json
 {
@@ -189,15 +199,6 @@ module.exports = {
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   }
-}
-```
-
-4. add this to the beginning of the file `tsconfig.json`
-
-```json
-{
-  "extends": "./tsconfig.paths.json"
-  // .....
 }
 ```
 
