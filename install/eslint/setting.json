@@ -85,10 +85,11 @@
   // prettier
   "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
+  "prettier.trailingComma": "all",
   "prettier.bracketSpacing": true,
   "prettier.bracketSameLine": true,
   "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
 
   // xo
   "xo.enable": true,

@@ -1,18 +1,27 @@
-# React helpers  
+# React helpers
 
-## Helpers implementation  
+## Helpers implementation
 
-## Install react custom  
+## Install react custom
 
 **update at 22/09/2022**
 
-- [look doc](./install/)  
+- [look doc](./install/)
 
-> typescript, axios, craco, tailwind, daisyui, react-router, react-toastify, rxjs  
+> typescript, axios, craco, tailwind, daisyui, react-router, react-toastify, rxjs
 
-- `craco` for create alias for import  
-- `react-toastify` for alert component  
+- `craco` for create alias for import
+- `react-toastify` for alert component
 - `rxjs` for manage store
 
+## Config axios and create a client axios
 
+**update at 22/09/2022**
 
+- [look doc](./axios/)
+
+## Example dark mode with store rxjs
+
+**update at 22/09/2022**
+
+- [look doc](./rxjs/)

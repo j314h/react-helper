@@ -33,7 +33,7 @@ $ npm i axios && npm i craco && npm i daisyui && npm i react-router-dom && npm i
 
 OR
 
-$ npm i axios craco daisyui react-router-dom react-toastify rxjs
+$ npm i axios craco daisyui react-router-dom react-toastify rxjs @types/react-router-dom
 $ npm i -D craco-alias tailwindcss postcss autoprefixer
 ```
 
@@ -69,7 +69,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['xo', 'xo-react', 'xo-typescript', 'plugin:react/recommended'],
+  extends: ['xo', 'xo-react', 'plugin:react/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -78,14 +78,25 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  ignorePatterns: [
+    '*.json',
+    '*.css',
+    '.eslintrc.cjs',
+    'craco.config.js',
+    'postcss.config.js',
+    'tailwind.config.js',
+  ],
   plugins: ['react', '@typescript-eslint'],
   rules: {
+    indent: 0,
     'object-curly-spacing': ['error', 'always'],
-    overrides: [
-      {
-        files: '*.json',
-        quotes: 'double',
-      },
+    '@typescript-eslint/indent': ['error', 2],
+    'react/jsx-indent': ['error', 2],
+    'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'always' }],
+    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-closing-bracket-location': [
+      0,
+      { selfClosing: 'props-aligned', nonEmpty: 'after-props' },
     ],
   },
 };
@@ -98,6 +109,7 @@ module.exports = {
 {
   "space": 2,
   "rules": {
+    "object-curly-spacing": ["error", "always"],
     "capitalized-comments": "off",
     "import/extensions": "off",
     "import/no-unassigned-import": "off",
@@ -115,7 +127,19 @@ module.exports = {
 > so create in one and copy paste my code.  
 > I removed some rules that break problem with some react file
 
-5. my setting of vscode
+6. delete partial `eslintConfig` in `package.json`  
+   delete this :
+
+```json
+"eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+```
+
+7. my setting of vscode
 
 > configuring eslint for the project and done.  
 > now here is the off topic part about my vscode config  
@@ -238,6 +262,7 @@ module.exports = {
 
 ---
 
+> re start your vs code
 > ok now your project is functional, you can work properly
 
 _you can visit the other parts to use axios, rxjs,  
