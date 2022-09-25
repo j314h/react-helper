@@ -124,7 +124,9 @@ module.exports = {
     "@typescript-eslint/triple-slash-reference": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-call": "off"
+    "@typescript-eslint/no-unsafe-call": "off",
+    "unicorn/no-useless-promise-resolve-reject": "off",
+    "@typescript-eslint/no-implicit-any-catch": "off"
   }
 }
 ```
