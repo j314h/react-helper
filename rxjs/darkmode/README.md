@@ -1,5 +1,11 @@
 # DarkMode example
 
+> ofcourse i use tailwind so you has this in your `tailwind.config.js`
+
+```js
+darkMode: 'class',
+```
+
 > this is my own store management with hooks and observables  
 > thanks to rxjs, I find this implementation  
 > and this construction simple and scalable,  
