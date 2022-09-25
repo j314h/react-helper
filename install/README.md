@@ -46,22 +46,10 @@ $ npm init @eslint/config
 ```
 
 > follow terminal instructions, choose react, choose typescript,  
-> style guide choose Xo, eslint file must be .js,  
+> style guide choose Standard, eslint file must be .js,  
 > continue installation with npm
 
-2. install eslint typescript
-
-> we need to install some more dependencies  
-> because eslint CLI does not install them>
-
-```shell
-$ npm i -D eslint-config-xo-typescript eslint-config-xo-react xo
-```
-
 3. file `.eslintrc.js`
-
-> rename this file with the extension .cjs  
-> and copy / paste this code :
 
 ```js
 module.exports = {
@@ -69,7 +57,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['xo', 'xo-react', 'plugin:react/recommended'],
+  extends: ['plugin:react/recommended', 'standard'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -78,64 +66,26 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  ignorePatterns: [
-    '*.json',
-    '*.css',
-    '.eslintrc.cjs',
-    'craco.config.js',
-    'postcss.config.js',
-    'tailwind.config.js',
-  ],
+  ignorePatterns: ['*.json', '*.css'],
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    indent: 0,
-    'capitalized-comments': 0,
-    'no-unused-vars': 1,
-    'object-curly-spacing': ['error', 'always'],
-    '@typescript-eslint/indent': ['error', 2],
-    'react/jsx-indent': ['error', 2],
-    'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'always' }],
-    'react/jsx-indent-props': ['error', 2],
-    'react/jsx-closing-bracket-location': [
-      0,
-      { selfClosing: 'props-aligned', nonEmpty: 'after-props' },
+    'no-undef': 0,
+    'space-before-function-paren': 0,
+    'comma-dangle': [
+      'error',
+      {
+        arrays: 'ignore',
+        objects: 'only-multiline',
+        imports: 'never',
+        exports: 'never',
+        functions: 'ignore',
+      },
     ],
-    'object-shorthand': ['error', 'always'],
   },
-};
-```
-
-4. create file `.xo-config.json` in root of your project  
-   and copy / paste this code
-
-```json
-{
-  "space": 2,
-  "rules": {
-    "object-curly-spacing": ["error", "always"],
-    "capitalized-comments": "off",
-    "import/extensions": "off",
-    "import/no-unassigned-import": "off",
-    "n/file-extension-in-import": "off",
-    "unicorn/filename-case": "off",
-    "unicorn/prefer-module": "off",
-    "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/object-curly-spacing": "off",
-    "@typescript-eslint/triple-slash-reference": "off",
-    "@typescript-eslint/consistent-type-definitions": "off",
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-call": "off",
-    "unicorn/no-useless-promise-resolve-reject": "off",
-    "@typescript-eslint/no-implicit-any-catch": "off"
-  }
 }
 ```
 
-> `.xo-config.json` does not exist at the time of installation.  
-> so create in one and copy paste my code.  
-> I removed some rules that break problem with some react file
-
-6. delete partial `eslintConfig` in `package.json`  
+4. delete partial `eslintConfig` in `package.json`  
    delete this :
 
 ```json
@@ -147,18 +97,18 @@ module.exports = {
   },
 ```
 
-7. my setting of vscode
+5. my setting of vscode
 
 > configuring eslint for the project and done.  
 > now here is the off topic part about my vscode config  
-> for XO to work properly with our prettier. >
+> for Standard to work properly with our prettier.  
 > you don't have to follow the eslint or vscode configuration,  
 > this is personal, but I find that my configuration respects the standards  
 > and works perfectly for all types of projects.
 
 > copy / paste the code of file `eslint/setting.json`
 
-> you have to understand that here I use XO to linter my files
+> you have to understand that here I use Standard to linter my files
 > and I use prettier to format them when saving the file.
 
 ## Craco
@@ -167,7 +117,7 @@ module.exports = {
    and copy this code:
 
 ```js
-const CracoAlias = require('craco-alias');
+const CracoAlias = require('craco-alias')
 
 module.exports = {
   eslint: {
@@ -183,7 +133,7 @@ module.exports = {
       },
     },
   ],
-};
+}
 ```
 
 2. create a file `tsconfig.paths.json` in root of your project  
@@ -265,7 +215,7 @@ module.exports = {
     },
   },
   plugins: [require('daisyui')],
-};
+}
 ```
 
 ---

@@ -91,8 +91,5 @@
   "prettier.printWidth": 80,
   "prettier.tabWidth": 2,
   "prettier.arrowParens": "avoid",
-
-  // xo
-  "xo.enable": true,
-  "xo.format.enable": true
+  "prettier.semi": false
 }
