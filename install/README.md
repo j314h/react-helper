@@ -29,7 +29,7 @@ $ npx create-react-app NAMEOFAPP --template typescript
 2. dependencies
 
 ```shell
-$ npm i axios && npm i craco && npm i daisyui && npm i react-router-dom && npm i react-toastify && npm i rxj && npm i @types/react-router-dom && npm i -D craco-alias && npm i -D tailwindcss postcss autoprefixer
+$ npm i axios && npm i craco && npm i daisyui && npm i react-router-dom && npm i react-toastify && npm i rxjs && npm i @types/react-router-dom && npm i -D craco-alias && npm i -D tailwindcss postcss autoprefixer
 
 OR
 
@@ -89,6 +89,8 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     indent: 0,
+    'capitalized-comments': 0,
+    'no-unused-vars': 1,
     'object-curly-spacing': ['error', 'always'],
     '@typescript-eslint/indent': ['error', 2],
     'react/jsx-indent': ['error', 2],
@@ -98,6 +100,7 @@ module.exports = {
       0,
       { selfClosing: 'props-aligned', nonEmpty: 'after-props' },
     ],
+    'object-shorthand': ['error', 'always'],
   },
 };
 ```
@@ -118,7 +121,10 @@ module.exports = {
     "unicorn/prefer-module": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/object-curly-spacing": "off",
-    "@typescript-eslint/triple-slash-reference": "off"
+    "@typescript-eslint/triple-slash-reference": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "off"
   }
 }
 ```
