@@ -7,8 +7,6 @@
 > this implementation includes a token management  
 > but I let you manage this part.
 
-_in progress_
-
 1. create folder `shared/http`
 
 2. on the inside create `http.instance.ts` and `http.interceptor.ts`

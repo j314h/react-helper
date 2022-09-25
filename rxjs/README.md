@@ -1,3 +1,5 @@
 # Example dark mode with store rxjs
 
-> in progress
+- [example dark mode](./darkmode/)
+
+> in progress for others examples
