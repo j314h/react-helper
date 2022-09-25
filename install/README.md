@@ -4,9 +4,9 @@
 > with the different options specified here:
 
 - create-react-app typescript
-- Xo for eslint  
+- Standard for eslint  
   (I also give my vscode configuration so  
-  that prettier and Xo work together)
+  that prettier and Standard work together)
 - craco for alias management
 - axios
 - react-router
