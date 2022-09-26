@@ -69,6 +69,8 @@ module.exports = {
   ignorePatterns: ['*.json', '*.css'],
   plugins: ['react', '@typescript-eslint'],
   rules: {
+    indent: 0,
+    'multiline-ternary': 0,
     'no-undef': 0,
     'space-before-function-paren': 0,
     'comma-dangle': [
