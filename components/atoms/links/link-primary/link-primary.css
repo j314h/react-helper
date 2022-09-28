@@ -1,0 +1,30 @@
+.link-primary {
+  @apply flex items-center justify-center
+    /* padding */
+
+    /* border */
+
+    /* color */;
+}
+
+.link-primary-size-text {
+  @apply text-link-primary-first 
+    sm:text-link-primary-second 
+    md:text-link-primary-third;
+}
+
+.link-primary-noactive {
+  @apply /* padding */
+
+    /* border */
+
+    /* color */;
+}
+
+.link-primary-active {
+  @apply /* padding */
+
+    /* border */
+
+    /* color */;
+}

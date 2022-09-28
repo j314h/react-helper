@@ -1,0 +1,13 @@
+.btn-icon-primary {
+  @apply flex items-center justify-center
+
+    /* border */
+    rounded-full
+
+    /* padding */
+    p-2
+
+    /* color */
+    hover:bg-action-move-secondary
+    dark:hover:bg-action-move-secondary-dark;
+}

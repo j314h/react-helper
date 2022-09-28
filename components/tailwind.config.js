@@ -7,30 +7,30 @@ module.exports = {
     extend: {
       // color
       colors: {
-        primary: '#F5F5F5',
-        'primary-dark': '#141414',
-        secondary: '#ffffff',
+        primary: '#000',
+        'primary-dark': '#000',
+        secondary: '#000',
         'secondary-dark': '#000000',
         tertiary: '#000000',
         'tertiary-dark': '#000000',
-        action: '#19A7FF',
-        'action-dark': '#19A7FF',
-        'action-move': '#0088DD',
-        'action-move-dark': '#0088DD',
+        action: '#000',
+        'action-dark': '#000',
+        'action-move': '#000',
+        'action-move-dark': '#000',
         'action-secondary': '#000000',
         'action-secondary-dark': '#000000',
-        'action-move-secondary': '#DDDDDD',
-        'action-move-secondary-dark': '#2F2F2F',
-        high: '#F54B02',
-        'high-dark': '#F54B02',
-        'high-move': '#F54B02',
-        'high-move-dark': '#F54B02',
-        error: '#EB0000',
-        'error-dark': '#EB0000',
-        success: '#00DF61',
-        'success-dark': '#00DF61',
-        warning: '#F7CD00',
-        'warning-dark': '#F7CD00',
+        'action-move-secondary': '#000',
+        'action-move-secondary-dark': '#000',
+        high: '#000',
+        'high-dark': '#000',
+        'high-move': '#000',
+        'high-move-dark': '#000',
+        error: '#000',
+        'error-dark': '#000',
+        success: '#000',
+        'success-dark': '#000',
+        warning: '#000',
+        'warning-dark': '#000',
       },
 
       // size text
@@ -49,6 +49,16 @@ module.exports = {
         'btn-text-primary-first': '1rem', // mobile
         'btn-text-primary-second': '1rem', // tablette
         'btn-text-primary-third': '1rem', // pc
+
+        // link text primary
+        'link-text-primary-first': '1rem', // mobile
+        'link-text-primary-second': '1rem', // tablette
+        'link-text-primary-third': '1rem', // pc
+
+        // link primary
+        'link-primary-first': '1rem', // mobile
+        'link-primary-second': '1rem', // tablette
+        'link-primary-third': '1rem', // pc
       },
     },
   },

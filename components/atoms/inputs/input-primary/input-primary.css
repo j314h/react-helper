@@ -1,0 +1,23 @@
+.input-primary {
+  @apply block w-full 
+
+        /* border */
+        outline-none 
+        rounded-lg  
+        border-2 border-transparent 
+        focus:border-2 
+        focus:border-action
+
+        /* text size */
+        text-input-primary-first
+        sm:text-input-primary-second
+        md:text-input-primary-third
+
+        /* text color */
+        /* text-black */
+        /* dark:text-white */
+
+        /* bg color */
+        bg-primary
+        dark:bg-primary-dark;
+}

@@ -1,0 +1,10 @@
+.link-text-primary {
+  @apply flex items-center justify-center
+
+    /* text */
+    hover:underline
+    hover:cursor-pointer
+
+    /* color */
+    text-action;
+}
