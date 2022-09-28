@@ -1,0 +1,20 @@
+.btn-primary {
+  @apply flex items-center justify-center
+
+    /* padding */
+    px-3 py-1
+    md:px-5 md:py-2
+
+    /* border */
+    rounded-md
+
+    /* text */
+    text-btn-primary-first
+    sm:text-btn-primary-second
+    md:text-btn-primary-third
+
+    /* color */
+    bg-action
+    hover:bg-action-move
+    text-white;
+}

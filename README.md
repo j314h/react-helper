@@ -25,3 +25,7 @@
 **update at 22/09/2022**
 
 - [look doc](./rxjs/)
+
+## Example components
+
+- [look component](./components)

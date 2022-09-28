@@ -1,0 +1,7 @@
+.btn-text-primary {
+  @apply flex items-center justify-center
+    
+    /* color */
+    text-action
+    hover:text-action-move;
+}
